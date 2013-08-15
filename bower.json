@@ -1,0 +1,26 @@
+{
+  "name": "react-inputplaceholder",
+  "version": "0.0.0",
+  "author": "chenglou <chenglou92@gmail.com>",
+  "description": "Form placeholder for input and textarea in ie8 and 9.",
+  "main": "react-inputplaceholder.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "facebook",
+    "react",
+    "input",
+    "textarea",
+    "placeholder",
+    "shim"
+  ],
+  "dependencies": {
+    "react": "~0.4.0"
+  },
+  "license": "MIT"
+}
