@@ -1,17 +1,17 @@
-# [React](http://facebook.github.io/react/)-inputplaceholder
+# [React](http://facebook.github.io/react/)-input-placeholder
 
 Form placeholder for input and textarea in ie8 and 9.
 
 ## install
 
 ```sh
-bower install react-inputplaceholder
+bower install react-input-placeholder
 ```
 
 Or simply drop the script somewhere on your page (after React of course):
 
 ```html
-<script src="path/to/react-inputplaceholder.js"></script>
+<script src="path/to/react-input-placeholder.js"></script>
 ```
 
 ## API
