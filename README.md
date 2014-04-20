@@ -26,10 +26,10 @@ The module exposes the `placeholderShim` object globally if it doesn't detect cj
 
 The object contains two components.
 
-#### <Input />
+#### &lt;Input />
 For inputs type of `text` and `password`.
 
-#### <TextArea />
+#### &lt;TextArea />
 For `textarea`.
 
 ## Usage
