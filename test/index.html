@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="a1"></div>
+  <div id="a2"></div>
+  <div id="a3"></div>
+  <div id="a4"></div>
+  <div id="a5"></div>
+
+  <div id="b1"></div>
+  <div id="b2"></div>
+  <div id="b3"></div>
+  <div id="b4"></div>
+  <div id="b5"></div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
+  <script src="es5-sham.min.js"></script>
+  <script src="console.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+
+  <script src="JSXTransformer.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react.min.js"></script>
+  <script type="text/jsx" src="../react-placeholder-shim.jsx"></script>
+  <script type="text/jsx">
+    /** @jsx React.DOM */
+    var Input = placeholderShim.Input;
+    var TextArea = placeholderShim.TextArea;
+
+    React.renderComponent(<Input placeholder="asd" />, document.querySelector('#a1'));
+    React.renderComponent(<Input value="abc" />, document.querySelector('#a2'));
+    React.renderComponent(<Input value="" placeholder="place" />, document.querySelector('#a3'));
+    React.renderComponent(<Input defaultValue="" placeholder="place" />, document.querySelector('#a4'));
+    React.renderComponent(<Input placeholder="place" defaultValue="haha" />, document.querySelector('#a5'));
+
+    React.renderComponent(<TextArea placeholder="asd" />, document.querySelector('#b1'));
+    React.renderComponent(<TextArea value="abc" />, document.querySelector('#b2'));
+    React.renderComponent(<TextArea value="" placeholder="place" />, document.querySelector('#b3'));
+    React.renderComponent(<TextArea defaultValue="" placeholder="place" />, document.querySelector('#b4'));
+    React.renderComponent(<TextArea placeholder="place" defaultValue="haha" />, document.querySelector('#b5'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "react-placeholder-shim",
+  "version": "0.0.3",
+  "description": "Form placeholder shim for input and textarea in ie8 and 9.",
+  "main": "react-placeholder-shim.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chenglou/react-placeholder-shim.git"
+  },
+  "keywords": [
+    "facebook",
+    "input",
+    "placeholder",
+    "react",
+    "react-component",
+    "shim",
+    "textarea"
+  ],
+  "author": "chenglou <chenglou92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenglou/react-placeholder-shim/issues"
+  },
+  "homepage": "https://github.com/chenglou/react-placeholder-shim",
+  "dependencies": {
+    "react": "^0.10.0"
+  }
+}

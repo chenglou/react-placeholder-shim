@@ -1,42 +1,49 @@
-# [React](http://facebook.github.io/react/)-input-placeholder
+# [React](http://facebook.github.io/react/)-placeholder-shim
 
 Form placeholder for input and textarea in ie8 and 9.
 
 ## install
 
+Npm:
 ```sh
-bower install react-input-placeholder
+npm install react-placeholder-shim
+```
+
+Bower:
+```sh
+bower install react-placeholder-shim
 ```
 
 Or simply drop the script somewhere on your page (after React of course):
 
 ```html
-<script src="path/to/react-input-placeholder.js"></script>
+<script src="path/to/react-placeholder-shim.js"></script>
 ```
 
 ## API
 
-#### &lt;InputPlaceholder />
+The module exposes the `placeholderShim` object globally if it doesn't detect cjs (npm). Otherwise, it exports the object.
+
+The object contains two components.
+
+#### <Input />
 For inputs type of `text` and `password`.
 
-#### &lt;TextAreaPlaceholder />
+#### <TextArea />
 For `textarea`.
 
 ## Usage
 
 ```html
-/**
-* @jsx React.DOM
-*/
+/** @jsx React.DOM */
+// Assuming the library's dropped in as a script tag.
+var Input = placeholderShim.Input;
 
-// try this on ie!
+// try this on IE!
 var Demo = React.createClass({
   render: function() {
     return (
-      <InputPlaceholder 
-        type="text" 
-        placeholder="asd" 
-        onChange={this.handleChange}/>
+      <Input type="text"placeholder="hi"onChange={this.handleChange} />
     )
   },
 
@@ -45,7 +52,7 @@ var Demo = React.createClass({
   }
 });
 
-React.renderComponent(<Demo/>, document.body);
+React.renderComponent(<Demo />, document.body);
 ```
 
 ## License
