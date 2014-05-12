@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
 
-'use strict';
-
 (function (window, React){
+  'use strict';
+
   var Input;
   var TextArea;
 

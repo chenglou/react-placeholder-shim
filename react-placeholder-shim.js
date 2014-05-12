@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
 
-'use strict';
-
 (function (window, React){
+  'use strict';
+
   var Input;
   var TextArea;
 
@@ -76,16 +76,16 @@
         };
 
         return (
-          React.DOM.div({style: wrapperStyle}, 
-            
+          React.DOM.div({style: wrapperStyle},
+
               this.transferPropsTo(
                 DOMComponent({ref: "input", onChange: this.handleChange})
-              ), 
-            
+              ),
+
             React.DOM.div({
-              ref: "placeholder", 
-              onClick: this.handlePlaceholderClick, 
-              style: placeholderStyle}, 
+              ref: "placeholder",
+              onClick: this.handlePlaceholderClick,
+              style: placeholderStyle},
                 this.props.placeholder
             )
           )
