@@ -118,4 +118,4 @@
       TextArea: TextArea
     };
   }
-})(window, React || require('React'));
+})(window, typeof require === 'function' ? require('React') : React);

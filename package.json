@@ -1,6 +1,6 @@
 {
   "name": "react-placeholder-shim",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Form placeholder shim for input and textarea in ie8 and 9.",
   "main": "react-placeholder-shim.js",
   "scripts": {
